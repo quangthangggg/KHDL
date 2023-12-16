@@ -1,6 +1,6 @@
 Đoạn code cũ sử dụng thư viện `requests` để crawl dữ liệu. Nên t chuyển sang sử dụng `selenium`. 
 
-Đầu tiên, tải **chromedriver.exe** tương ứng với phiên bản Chrome bạn đang sử dụng [tại đây](https://chromedriver.chromium.org/downloads). 
+Đầu tiên, tải **chromedriver.exe** tương ứng với phiên bản Chrome đang sử dụng [tại đây](https://chromedriver.chromium.org/downloads). 
 
 Sau đó, chỉnh sửa tên đội ở dòng 17 trong code và sửa đường dẫn trong hàm main.
 
