@@ -10,7 +10,7 @@ def get_player_name(path):
     browser = webdriver.Chrome(service=Service(path))
     player = {}
 
-    seasons = ['2022-2023','2021-2022']
+    seasons = ['2022-2023','2023-2024']
 
     # cái này điền ID và tên của team, ID lấy từ trên web, cứu search tên đội ra là nó có thêm ID ở URL
     # dấu cách thì thay bằng dấu gạch ngang 
@@ -65,6 +65,7 @@ def crawl_player(player,player_file_name):
             new_player_link = player_link.replace("keeper", "passing")
             try:
                 df = pd.read_html(new_player_link, header=1)[0]
+                df['ID'] = i
                 df = df.drop(columns=['Match Report'])
                 df = df.drop(columns=['Comp'], errors = 'ignore')
                 df = df.rename(columns={"Day": "Name"})
