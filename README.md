@@ -1,10 +1,10 @@
-Đoạn code cũ sử dụng thư viện `requests` để crawl dữ liệu. Tuy nhiên, tôi đã chuyển sang sử dụng `selenium` như thầy yêu cầu. 
+Đoạn code cũ sử dụng thư viện `requests` để crawl dữ liệu. Nên t chuyển sang sử dụng `selenium`. 
 
-Đầu tiên, hãy tải **chromedriver.exe** tương ứng với phiên bản Chrome bạn đang sử dụng [tại đây](https://chromedriver.chromium.org/downloads). 
+Đầu tiên, tải **chromedriver.exe** tương ứng với phiên bản Chrome bạn đang sử dụng [tại đây](https://chromedriver.chromium.org/downloads). 
 
 Sau đó, chỉnh sửa tên đội ở dòng 17 trong code và sửa đường dẫn trong hàm main.
 
-Ngoài ra, hãy điều chỉnh tham số ở dòng 44 theo từng giải đấu:
+Ngoài ra, điều chỉnh tham số ở dòng 44 theo từng giải đấu:
 
 - Ngoại hạng Anh: `//*[@id="stats_standard_9"]/tbody`
 - La Liga: `//*[@id="stats_standard_12"]/tbody`
